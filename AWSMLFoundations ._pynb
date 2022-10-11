@@ -1,14 +1,14 @@
 ##https://jupyter.org/try-jupyter/lab?path=AWSMLFoundations.ipynb
 
-##
-## Exercise: Refactoring – Wine quality
-##In this exercise, you'll refactor code that analyzes a wine quality dataset taken from the UCI Machine Learning Repository. Each row contains data on a wine sample, including several physicochemical properties gathered from tests, as well as a quality rating evaluated by wine experts.
 
-##Download the notebook file refactor_wine_quality.ipynb and the dataset winequality-red.csv. Open the notebook file using the Jupyter Notebook. Follow the instructions in the notebook to complete the exercise.
+ Exercise: Refactoring – Wine quality
+In this exercise, you'll refactor code that analyzes a wine quality dataset taken from the UCI Machine Learning Repository. Each row contains data on a wine sample, including several physicochemical properties gathered from tests, as well as a quality rating evaluated by wine experts.
 
-##Supporting Materials
-##https://video.udacity-data.com/topher/2021/April/60761eaa_refactor-wine-quality/refactor-wine-quality.ipynb
-##
+Download the notebook file refactor_wine_quality.ipynb and the dataset winequality-red.csv. Open the notebook file using the Jupyter Notebook. Follow the instructions in the notebook to complete the exercise.
+
+Supporting Materials
+https://video.udacity-data.com/topher/2021/April/60761eaa_refactor-wine-quality/refactor-wine-quality.ipynb
+
 
 ##solution
 
@@ -34,6 +34,9 @@ def numeric_to_buckets(df, column_name):
 for feature in df.columns[:-1]:
     numeric_to_buckets(df, feature)
     print(df.groupby(feature).quality.mean(), '\n')
+    
+    
+    
     
     Exercise: Optimizing – Common books
 We provide the code your coworker wrote to find the common book IDs in books_published_last_two_years.txt and all_coding_books.txt to obtain a list of recent coding books. Can you optimize it?
@@ -86,6 +89,7 @@ print('Duration: {} seconds'.format(time.time() - start))
 
 
 
+
 Exercise: Optimizing - Holiday Gifts
 In the last example, you learned that using vectorized operations and more efficient data structures can optimize your code. Let's use these tips for one more exercise.
 
@@ -127,3 +131,15 @@ total_price = (gift_costs[gift_costs < 25]).sum() * 1.08
 print(total_price)
 
 print('Duration: {} seconds'.format(time.time() - start))
+
+
+
+Exercise: Unit tests
+Download README.md, compute_launch.py, and test_compute_launch.py.
+
+Follow the instructions in README.md to complete the exercise.
+
+Supporting Materials
+https://video.udacity-data.com/topher/2021/April/607626f1_compute-launch/compute-launch.py
+https://video.udacity-data.com/topher/2021/April/60762705_test-compute-launch/test-compute-launch.py
+https://video.udacity-data.com/topher/2021/April/6076270d_readme/readme.md
